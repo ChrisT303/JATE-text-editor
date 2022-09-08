@@ -22,13 +22,17 @@ module.exports = () => {
         template: "./index.html",
         title: "J.A.T.E",
       }),
+      new InjectManifest({
+        swSrc: "./src/sw.js",
+        swDest: "service-worker.js",
+      }),
     ],
 
     module: {
       rules: [
         {
           test: /\.css$/i,
-          use: ['style-loader', "css-loader"],
+          use: ["style-loader", "css-loader"],
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
