@@ -23,8 +23,26 @@ module.exports = () => {
         title: "J.A.T.E",
       }),
       new InjectManifest({
-        swSrc: "./src/sw.js",
-        swDest: "service-worker.js",
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
+      }),
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: "Just another text editor",
+        short_name: "JATE",
+        description: "A text editor that can be installed from the browser",
+        background_color: "#336699",
+        theme_color: "#FFD9DA",
+        start_url: "/",
+        publicPath: "/",
+        icons: [
+          {
+            src: path.resolve("src/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join("assets", "icons"),
+          },
+        ],
       }),
     ],
 
