@@ -24,6 +24,9 @@ The application accepts text and saves the input. The input will render when the
 The MIT License
 ## Application Link
 * [Heroku](https://jate-text-editor-deftonechris.herokuapp.com/)
+## Screen Shot
+![image](https://user-images.githubusercontent.com/103149149/190015170-cfcd79dc-b148-4e4a-a72f-5f91fb516974.png)
+
 ## Questions
 Contact me by clicking the below links:
 * [Github Link](https://github.com/deftonechris)
