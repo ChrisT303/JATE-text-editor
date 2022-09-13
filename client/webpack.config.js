@@ -24,11 +24,12 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
+        swDest: "./src-sw.js",
       }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
+        display: 'standalone',
         name: "Just Another Text Editor",
         short_name: "JATE",
         description: "A text editor that can be installed from the browser",
